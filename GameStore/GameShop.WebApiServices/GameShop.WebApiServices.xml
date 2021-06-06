@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GameShop.WebApiServices</name>
+    </assembly>
+    <members>
+        <member name="M:GameShop.WebApiServices.Controllers.CardsController.GetAllCards">
+            <summary>
+            This service gets all cards.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardsController.GetAllCardsForUser(System.Int32)">
+            <summary>
+            This service gets all cards of a specific user.
+            </summary>
+            <param name="userId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardsController.CreateCard(GameStore.Services.Models.CreateCardDto)">
+            <summary>
+            This service creates card from a given JsonObject.
+            </summary>
+            <param name="card"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardsController.UpdateCard(GameStore.Services.Models.UpdateCardDto)">
+            <summary>
+            This service updates card in the database from a given JsonObject.
+            </summary>
+            <param name="card"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardsController.DeleteCard(System.Int32)">
+            <summary>
+            This service deletes a card with given id.
+            </summary>
+            <param name="cardId"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardTypesController.GetAllCardTypes">
+            <summary>
+            This service gets all card types.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardTypesController.GetAllCardsForType(System.Int32)">
+            <summary>
+            This service gets all cards for a specific type.
+            </summary>
+            <param name="typeId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardTypesController.CreateCardType(GameStore.Services.Models.CreateCardTypeDto)">
+            <summary>
+            This service creates card type from a given JsonObject.
+            </summary>
+            <param name="cardType"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardTypesController.UpdateCardType(GameStore.Services.Models.CardTypeDto)">
+            <summary>
+            This service updates card type in the database from a given JsonObject.
+            </summary>
+            <param name="cardType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.CardTypesController.DeleteCardType(System.Int32)">
+            <summary>
+            This service deletes a card type with given id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.DevelopersController.GetAllDevelopers">
+            <summary>
+            This service gets all developers.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.DevelopersController.GetAllGamesForDeveloper(System.Int32)">
+            <summary>
+            This service gets all games for a specific developer.
+            </summary>
+            <param name="devId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.DevelopersController.CreateDeveloper(GameStore.Services.Models.CreateDeveloperDto)">
+            <summary>
+            This service creates developer from a given JsonObject.
+            </summary>
+            <param name="developer"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.DevelopersController.UpdateDeveloper(GameStore.Services.Models.DeveloperDto)">
+            <summary>
+            This service updates developer in the database from a given JsonObject.
+            </summary>
+            <param name="developer"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.DevelopersController.DeleteDeveloper(System.Int32)">
+            <summary>
+            This service deletes a developer with given id.
+            </summary>
+            <param name="id"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GamesController.GetAllGames">
+            <summary>
+            This service gets all games.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GamesController.GetGamesFromDeveloper(System.String)">
+            <summary>
+            This service gets all games for a specific developer.
+            </summary>
+            <param name="devName"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GamesController.CreateGame(GameStore.Services.Models.CreateGameDto)">
+            <summary>
+            This service creates game from a given JsonObject.
+            </summary>
+            <param name="game"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GamesController.UpdateGame(GameStore.Services.Models.UpdateGameDto)">
+            <summary>
+            This service updates game in the database from a given JsonObject.
+            </summary>
+            <param name="game"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GamesController.DeleteGame(System.Int32)">
+            <summary>
+            This service deletes a game with given id.
+            </summary>
+            <param name="id"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GenresController.GetAllGenres">
+            <summary>
+            This service gets all genres.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GenresController.GetAllGamesForGenre(System.Int32)">
+            <summary>
+            This service gets all games for a specific genre.
+            </summary>
+            <param name="genreId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GenresController.CreateGenre(GameStore.Services.Models.CreateGenreDto)">
+            <summary>
+            This service creates genre from a given JsonObject.
+            </summary>
+            <param name="genre"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GenresController.UpdateGenre(GameStore.Services.Models.GenreDto)">
+            <summary>
+            This service updates genre in the database from a given JsonObject.
+            </summary>
+            <param name="genre"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.GenresController.DeleteGenre(System.Int32)">
+            <summary>
+            This service deletes a genre with given id.
+            </summary>
+            <param name="id"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchasesController.GetAllPurchases">
+            <summary>
+            This service gets all purchases.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchasesController.GetPurchasesByCard(System.Int32)">
+            <summary>
+            This service gets all purchases for a specific card.
+            </summary>
+            <param name="cardId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchasesController.CreatePurchase(GameStore.Services.Models.CreatePurchaseDto)">
+            <summary>
+            This service creates purchase from a given JsonObject.
+            </summary>
+            <param name="purchase"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchasesController.UpdatePurchase(GameStore.Services.Models.UpdatePurchaseDto)">
+            <summary>
+            This service updates purchase in the database from a given JsonObject.
+            </summary>
+            <param name="purchase"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchasesController.Delete(System.Int32)">
+            <summary>
+            This service deletes a purchase with given id.
+            </summary>
+            <param name="id"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchaseTypesController.GetAllPurchaseTypes">
+            <summary>
+            This service gets all purchase types.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchaseTypesController.GetAllPurchasesForType(System.Int32)">
+            <summary>
+            This service gets all purchases for a specific type.
+            </summary>
+            <param name="typeId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchaseTypesController.CreatePurchaseType(GameStore.Services.Models.CreatePurchaseTypeDto)">
+            <summary>
+            This service creates purchase type from a given JsonObject.
+            </summary>
+            <param name="purchaseType"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchaseTypesController.UpdatePurchaseType(GameStore.Services.Models.PurchaseTypeDto)">
+            <summary>
+            This service updates purchase type in the database from a given JsonObject.
+            </summary>
+            <param name="purchaseType"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.PurchaseTypesController.DeletePurchaseType(System.Int32)">
+            <summary>
+            This service deletes a purchase type with given id.
+            </summary>
+            <param name="id"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.GetAllTags">
+            <summary>
+            This service gets all tags.
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.GetTagsForGame(System.Int32)">
+            <summary>
+            This service gets all tags for a specific game.
+            </summary>
+            <param name="gameId"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.CreateTag(GameStore.Services.Models.CreateTagDto)">
+            <summary>
+            This service creates tag from a given JsonObject.
+            </summary>
+            <param name="tag"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.UpdateTag(GameStore.Services.Models.TagDto)">
+            <summary>
+            This service updates tag in the database from a given JsonObject.
+            </summary>
+            <param name="tag"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.AddTagToGame(System.Int32,System.Int32)">
+            <summary>
+            This service adds specific tag to a specific game.
+            </summary>
+            <param name="tagId"></param>
+            <param name="gameId"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.RemoveTagFromGame(System.Int32,System.Int32)">
+            <summary>
+            This service removes specific tag from a specific game.
+            </summary>
+            <param name="tagId"></param>
+            <param name="gameId"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TagsController.DeleteTag(System.Int32)">
+            <summary>
+            This service deletes a tag with given id.
+            </summary>
+            <param name="id"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.TokenController.GetToken(System.String)">
+            <summary>
+            This service generates token to access the other servicess by given username.
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.UsersController.GetAllUsers">
+            <summary>
+            This service gets all users. 
+            </summary>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.UsersController.GetUserByUsername(System.String)">
+            <summary>
+            This service gets information about user by given username.
+            </summary>
+            <param name="username"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.UsersController.GetUsersByAge(System.Int32)">
+            <summary>
+            This service gets all user with given age.
+            </summary>
+            <param name="age"></param>
+            <returns>JsonString</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.UsersController.CreateUser(GameStore.Services.Models.CreateUserDto)">
+            <summary>
+            This service creates user in the database from a given JsonObject.
+            </summary>
+            <param name="user"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.UsersController.UpdateUser(GameStore.Services.Models.UserDto)">
+            <summary>
+            This service updates user in the database from a given JsonObject.
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameShop.WebApiServices.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            This service deletes a user with given id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
